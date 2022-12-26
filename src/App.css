@@ -1,38 +1,67 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: all .2s ease-in-out;
+}
+h2{
+  margin-top: 20px;
   text-align: center;
+  animation-name: colory;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-field{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  margin-top: 30px;
+}
+.input-field input.nothin{
+  width: 300px;
+  padding: 10px;
+}
+input{
+  padding: 10px;
+}
+.input-field button{
+  padding: 10px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.display{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fields{
+  width: 370px;
+  padding: 10px;
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.fields button{
+background-color: #c23c55;
+box-shadow: 1px 1px 1px 1px #888888;
+color: white;
+border: none;
+border-radius: 2px;
+padding: 5px;
+margin-left: 5px;
+}
+.fields button:hover{
+  background-color: #9c142d;
+  box-shadow: none;
+}
+.fields .update{
+  background-color: rgb(40, 101, 186);
+  transition: all .5s ease-in-out;
+}
+.fields .update:hover{
+  background-color: rgb(39, 103, 198);
 }
